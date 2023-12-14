@@ -1,8 +1,8 @@
-import { FormVlues } from "../_types";
+import { FormValues } from "../_types";
 
 const today = new Date();
 
-export const contactData: FormVlues[] = [
+export const contactData: FormValues[] = [
   {
     id: 1,
     name: "Shawn Spencer",

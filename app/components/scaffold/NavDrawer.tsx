@@ -62,6 +62,7 @@ const NavDrawer = () => {
         </Toolbar>
       </AppBar>
       <Drawer
+        disableEnforceFocus
         variant="temporary"
         open={true}
         sx={simpleStyles.drawer}
