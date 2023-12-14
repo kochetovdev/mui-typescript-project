@@ -18,9 +18,9 @@ const BeautifullAutocomplete = ({ value, onInputChange }: Props) => {
         <TextField name="role" {...params} sx={{ minWidth: minWidth }} />
       )}
       getOptionLabel={(roleOption) => `${roleOption}`}
-      renderOption={(props, option) => <li {...props}>{`${option}`}</li>}
-      value={value || ""}
+      renderOption={(props, option) => <li key={option} {...props}>{`${option}`}</li>}
       isOptionEqualToValue={(option, value) => option === value || value === ""}
+      value={value || ""}
       onInputChange={onInputChange}
     />
   );

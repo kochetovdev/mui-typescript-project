@@ -31,7 +31,7 @@ const ContactFormPage = () => {
       name: "",
       skills: ["React"],
       startDate: dayjs(
-        `${today.getMonth() + 1}-${today.getDate()}-${today.getFullYear()}`
+        `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`
       ),
       preference: defaultPreference,
     };
@@ -82,7 +82,7 @@ const ContactFormPage = () => {
     setFormValues({
       ...formValues,
       startDate: dayjs(
-        `${startDate.month() + 1}-${startDate.date()}-${startDate.year()}`
+        `${startDate.month() + 1}/${startDate.date()}/${startDate.year()}`
       ),
     });
   };
